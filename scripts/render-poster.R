@@ -14,6 +14,7 @@ rmarkdown::render(
 webshot::webshot(
   url = paste0("output/", output_file),
   file = "output/poster.png",
+  selector = ".dashboard-page-wrapper",
   vwidth = width,
   vheight = floor(width * sqrt(2)),          # Use A series aspect ratio
   delay = 1,                                 # Wait to allow all element to load
